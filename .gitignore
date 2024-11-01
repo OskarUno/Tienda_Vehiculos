@@ -1,4 +1,5 @@
+.gitignore
 virtualenvwrapper/
 *.pyc
-__pycache__	
+__pycache__
 archivo.txt
