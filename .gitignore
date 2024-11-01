@@ -1,5 +1,0 @@
-.gitignore
-virtualenvwrapper/
-*.pyc
-__pycache__
-archivo.txt
