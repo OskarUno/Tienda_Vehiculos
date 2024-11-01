@@ -1,0 +1,58 @@
+En vehiculo/urls.py, define las rutas:
+    from django.urls import path
+    from . import views
+
+    urlpatterns = [
+        path('', views.index, name='index'),
+    ]
+
+Configurar las vistas y URLs: En vehiculo/views.py, añade algunas vistas básicas para mostrar los vehículos:
+    from django.shortcuts import render
+    from .models import Vehiculo
+
+    def index(request):
+        vehiculos = Vehiculo.objects.all()
+        return render(request, 'vehiculo/index.html', {'vehiculos': vehiculos})
+
+
+python manage.py runserver
+
+Registrar el modelo en el administrador de Django: En vehiculo/admin.py, registra el modelo para que aparezca en el administrador:
+    from django.contrib import admin
+    from .models import Vehiculo
+
+    admin.site.register(Vehiculo)
+
+python manage.py createsuperuser  admin admin
+python manage.py migrate
+python manage.py makemigrations vehiculo
+despues de crear la clase hacer
+Agregar vehiculo a INSTALLED_APPS = [  'vehiculo',]
+python manage.py startapp vehículo
+Seleccionar el interprete en la barra superior con >Select interprete
+cd proyecto_vehiculos_django
+en requirements.txt hay esto
+asgiref==3.8.1
+beautifulsoup4==4.12.3
+Django==4.0.5
+django-bootstrap-v5==1.0.11
+django-crispy-forms==1.14.0
+soupsieve==2.6
+sqlparse==0.5.1
+tzdata==2024.2
+django-admin startproject proyecto_vehiculos_django
+pip install crispy-bootstrap5
+pip install crispy-bootstrap5 versión 0.6. (Dice version invalida)
+pip install django-crispy-forms==1.14.0.
+pip install django-bootstrap-v5==1.0.11.
+cd virtualenvwrapper
+pip freeze > requirements.txt
+cd..
+pip install django==4.0.5.
+cd virtualenvwrapper
+pip freeze > requirements.txt
+cd..
+.\Scripts\Activate
+cd virtualenvwrapper
+python -m venv virtualenvwrapper
+
