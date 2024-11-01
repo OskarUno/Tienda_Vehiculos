@@ -1,3 +1,4 @@
 	virtualenvwrapper/   	#(carpeta entorno virutal)
 	*.pyc 		#(archivos compilados de py)
 	__pycache__	#(archvis de memoria cache)
+    archivo.txt
