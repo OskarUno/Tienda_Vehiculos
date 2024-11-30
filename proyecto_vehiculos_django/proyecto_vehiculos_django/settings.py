@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'vehiculo',
+    'permisos',
+    
 ]
 
 MIDDLEWARE = [
@@ -123,3 +125,18 @@ STATICFILES_DIRS = [BASE_DIR / "static",]
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Se habilita el uso del login
+#LOGIN_URL = '/accounts/login/'
+LOGIN_URL = '/usuarios/login/'
+#Redireccion al hacer login exitoso
+LOGIN_REDIRECT_URL = '/'    #Se coloca donde se redirige al hacer login en este caso / indica al index
+
+# Configurar el Backend de sesion
+SESSION_ENGINE = "django.contrib.sessions.backends.db"
+SESSION_COOKIES_AGE = 60   #Tiempo de la sesion activa en segundos
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_SAVE_EVERY_REQUEST = True   #La sesion se actualiza con cada interaccion   
+
+
+

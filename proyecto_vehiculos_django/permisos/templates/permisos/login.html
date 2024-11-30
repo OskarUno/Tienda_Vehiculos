@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}INICIAR SESION{% endblock %}
+{% block content %}
+
+<div class="container">
+<!-- http://127.0.0.1:8000/accounts/login/-->
+
+    <h2>Inicio de sesion de Usuario</h2>
+
+    <form class="form" method="post">
+        <!-- csrf_token se utiliza para evitar ataques cruzados OBLIGATORIA -->
+        {% csrf_token %}
+        <!-- as_p Metodo para renderizar el formulario as=como p=parrafo -->
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-secondary bg-gradient">Iniciar Sesion</button>
+    </form>
+
+</div>
+{% endblock %}

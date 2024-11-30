@@ -1,27 +1,18 @@
 [
     {
-        "label": "os",
-        "kind": 6,
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
-        "label": "get_asgi_application",
-        "importPath": "django.core.asgi",
-        "description": "django.core.asgi",
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
         "isExtraImport": true,
-        "detail": "django.core.asgi",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -38,6 +29,134 @@
         "description": "django.contrib",
         "isExtraImport": true,
         "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -73,6 +192,22 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -89,75 +224,60 @@
         "documentation": {}
     },
     {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -183,6 +303,69 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "PermisosConfig",
+        "kind": 6,
+        "importPath": "proyecto_vehiculos_django.permisos.apps",
+        "description": "proyecto_vehiculos_django.permisos.apps",
+        "peekOfCode": "class PermisosConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'permisos'",
+        "detail": "proyecto_vehiculos_django.permisos.apps",
+        "documentation": {}
+    },
+    {
+        "label": "RegistroForm",
+        "kind": 6,
+        "importPath": "proyecto_vehiculos_django.permisos.forms",
+        "description": "proyecto_vehiculos_django.permisos.forms",
+        "peekOfCode": "class RegistroForm(forms.ModelForm):\n    password = forms.CharField(widget = forms.PasswordInput)\n    class Meta:  # Clase Meta define campos dentro del formulario\n        model = User\n        fields = ['username', 'email', 'password']",
+        "detail": "proyecto_vehiculos_django.permisos.forms",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.permisos.urls",
+        "description": "proyecto_vehiculos_django.permisos.urls",
+        "peekOfCode": "app_name = 'usuarios'\nurlpatterns = [\n    path('registro/', views.registro, name='registro'),\n    path('cerrar_session/', views.logout_view, name='cerrar_session'),\n    path('iniciar_sesion/', views.login_view, name='login'),\n]",
+        "detail": "proyecto_vehiculos_django.permisos.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.permisos.urls",
+        "description": "proyecto_vehiculos_django.permisos.urls",
+        "peekOfCode": "urlpatterns = [\n    path('registro/', views.registro, name='registro'),\n    path('cerrar_session/', views.logout_view, name='cerrar_session'),\n    path('iniciar_sesion/', views.login_view, name='login'),\n]",
+        "detail": "proyecto_vehiculos_django.permisos.urls",
+        "documentation": {}
+    },
+    {
+        "label": "registro",
+        "kind": 2,
+        "importPath": "proyecto_vehiculos_django.permisos.views",
+        "description": "proyecto_vehiculos_django.permisos.views",
+        "peekOfCode": "def registro(request):\n    if request.method == 'POST':\n        form = RegistroForm(request.POST)\n        if form.is_valid():\n            user = form.save(commit = False)\n            user.set_password(form.cleaned_data['password'])\n            user.save() \n            #Asignar el grupo comun al nuevo usuario\n            grupo_usuario_comun = Group.objects.get(name='Usuario_comun')\n            user.groups.add(grupo_usuario_comun)",
+        "detail": "proyecto_vehiculos_django.permisos.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_view",
+        "kind": 2,
+        "importPath": "proyecto_vehiculos_django.permisos.views",
+        "description": "proyecto_vehiculos_django.permisos.views",
+        "peekOfCode": "def logout_view(request):\n    # Cerrar session de usuario y redirige a la pagina de inicio\n    logout(request)\n    messages.success(request, 'Sesion cerrada con exito')\n    return redirect('permisos:login')\ndef login_view(request):\n    # Iniciar sesion\n    if request.method == \"POST\":\n        form = AuthenticationForm(request, data = request.POST)\n        if form.is_valid():",
+        "detail": "proyecto_vehiculos_django.permisos.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "proyecto_vehiculos_django.permisos.views",
+        "description": "proyecto_vehiculos_django.permisos.views",
+        "peekOfCode": "def login_view(request):\n    # Iniciar sesion\n    if request.method == \"POST\":\n        form = AuthenticationForm(request, data = request.POST)\n        if form.is_valid():\n            auth_login(request, form.get_user())\n            messages.success(request, 'Se ha iniciado sesion con exito')\n            return redirect('vehiculo:listar')\n    else:  # 3.8\n        form = AuthenticationForm()",
+        "detail": "proyecto_vehiculos_django.permisos.views",
         "documentation": {}
     },
     {
@@ -235,7 +418,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'vehiculo',\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'vehiculo',\n    'permisos',\n]",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -316,7 +499,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#Se habilita el uso del login",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -325,7 +508,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#Se habilita el uso del login\n#LOGIN_URL = '/accounts/login/'",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -334,7 +517,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#Se habilita el uso del login\n#LOGIN_URL = '/accounts/login/'\nLOGIN_URL = '/usuarios/login/'\n#Redireccion al hacer login exitoso\nLOGIN_REDIRECT_URL = '/'    #Se coloca donde se redirige al hacer login en este caso / indica al index",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -343,7 +526,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "STATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#Se habilita el uso del login\n#LOGIN_URL = '/accounts/login/'\nLOGIN_URL = '/usuarios/login/'\n#Redireccion al hacer login exitoso\nLOGIN_REDIRECT_URL = '/'    #Se coloca donde se redirige al hacer login en este caso / indica al index\n# Configurar el Backend de sesion",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -352,7 +535,70 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#Se habilita el uso del login\n#LOGIN_URL = '/accounts/login/'\nLOGIN_URL = '/usuarios/login/'\n#Redireccion al hacer login exitoso\nLOGIN_REDIRECT_URL = '/'    #Se coloca donde se redirige al hacer login en este caso / indica al index\n# Configurar el Backend de sesion\nSESSION_ENGINE = \"django.contrib.sessions.backends.db\"\nSESSION_COOKIES_AGE = 60   #Tiempo de la sesion activa en segundos\nSESSION_EXPIRE_AT_BROWSER_CLOSE = True",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#LOGIN_URL",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "peekOfCode": "#LOGIN_URL = '/accounts/login/'\nLOGIN_URL = '/usuarios/login/'\n#Redireccion al hacer login exitoso\nLOGIN_REDIRECT_URL = '/'    #Se coloca donde se redirige al hacer login en este caso / indica al index\n# Configurar el Backend de sesion\nSESSION_ENGINE = \"django.contrib.sessions.backends.db\"\nSESSION_COOKIES_AGE = 60   #Tiempo de la sesion activa en segundos\nSESSION_EXPIRE_AT_BROWSER_CLOSE = True\nSESSION_SAVE_EVERY_REQUEST = True   #La sesion se actualiza con cada interaccion",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "peekOfCode": "LOGIN_URL = '/usuarios/login/'\n#Redireccion al hacer login exitoso\nLOGIN_REDIRECT_URL = '/'    #Se coloca donde se redirige al hacer login en este caso / indica al index\n# Configurar el Backend de sesion\nSESSION_ENGINE = \"django.contrib.sessions.backends.db\"\nSESSION_COOKIES_AGE = 60   #Tiempo de la sesion activa en segundos\nSESSION_EXPIRE_AT_BROWSER_CLOSE = True\nSESSION_SAVE_EVERY_REQUEST = True   #La sesion se actualiza con cada interaccion",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'    #Se coloca donde se redirige al hacer login en este caso / indica al index\n# Configurar el Backend de sesion\nSESSION_ENGINE = \"django.contrib.sessions.backends.db\"\nSESSION_COOKIES_AGE = 60   #Tiempo de la sesion activa en segundos\nSESSION_EXPIRE_AT_BROWSER_CLOSE = True\nSESSION_SAVE_EVERY_REQUEST = True   #La sesion se actualiza con cada interaccion",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_ENGINE",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "peekOfCode": "SESSION_ENGINE = \"django.contrib.sessions.backends.db\"\nSESSION_COOKIES_AGE = 60   #Tiempo de la sesion activa en segundos\nSESSION_EXPIRE_AT_BROWSER_CLOSE = True\nSESSION_SAVE_EVERY_REQUEST = True   #La sesion se actualiza con cada interaccion",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_COOKIES_AGE",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "peekOfCode": "SESSION_COOKIES_AGE = 60   #Tiempo de la sesion activa en segundos\nSESSION_EXPIRE_AT_BROWSER_CLOSE = True\nSESSION_SAVE_EVERY_REQUEST = True   #La sesion se actualiza con cada interaccion",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_EXPIRE_AT_BROWSER_CLOSE",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "peekOfCode": "SESSION_EXPIRE_AT_BROWSER_CLOSE = True\nSESSION_SAVE_EVERY_REQUEST = True   #La sesion se actualiza con cada interaccion",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SESSION_SAVE_EVERY_REQUEST",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "peekOfCode": "SESSION_SAVE_EVERY_REQUEST = True   #La sesion se actualiza con cada interaccion",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -361,7 +607,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.urls",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.index, name='index'),\n    path('vehiculo/', include('vehiculo.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.index, name='index'),\n    path('vehiculo/', include('vehiculo.urls')),\n    path('permisos/', include(('permisos.urls', 'permisos'), namespace='permisos')),\n]",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.urls",
         "documentation": {}
     },
