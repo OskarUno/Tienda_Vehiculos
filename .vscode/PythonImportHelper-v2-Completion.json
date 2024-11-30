@@ -113,6 +113,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -282,7 +298,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'es-cl'\nTIME_ZONE = 'America/Santiago'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -291,7 +307,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'America/Santiago'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -300,7 +316,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -309,7 +325,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -318,7 +334,16 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
+        "peekOfCode": "STATICFILES_DIRS = [BASE_DIR / \"static\",]\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -368,6 +393,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "proyecto_vehiculos_django.vehiculo.migrations.0002_alter_vehiculo_marca",
+        "description": "proyecto_vehiculos_django.vehiculo.migrations.0002_alter_vehiculo_marca",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('vehiculo', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='vehiculo',\n            name='marca',\n            field=models.CharField(choices=[('Ford', 'Ford'), ('Fiat', 'Fiat'), ('Chevrolet', 'Chevrolet'), ('Toyota', 'Toyota')], default='Ford', max_length=20),\n        ),",
+        "detail": "proyecto_vehiculos_django.vehiculo.migrations.0002_alter_vehiculo_marca",
+        "documentation": {}
+    },
+    {
         "label": "VehiculoAdmin",
         "kind": 6,
         "importPath": "proyecto_vehiculos_django.vehiculo.admin",
@@ -390,25 +424,7 @@
         "kind": 6,
         "importPath": "proyecto_vehiculos_django.vehiculo.forms",
         "description": "proyecto_vehiculos_django.vehiculo.forms",
-        "peekOfCode": "class VehiculoForm(forms.ModelForm):\n    marca = forms.ChoiceField(choices = MARCAS)\n    modelo = forms.CharField(max_length=100)\n    serial_carroceria = forms.CharField(max_length=50) \n    serial_motor = forms.CharField(max_length=50) \n    categoria = forms.ChoiceField(choices = CATEGORIAS) \n    precio = forms.DecimalField(max_digits=10, decimal_places=2) \n    class Meta:\n        model = Vehiculo\n        fields = ['marca', 'modelo', 'serial_carroceria','serial_motor','categoria', 'precio']",
-        "detail": "proyecto_vehiculos_django.vehiculo.forms",
-        "documentation": {}
-    },
-    {
-        "label": "MARCAS",
-        "kind": 5,
-        "importPath": "proyecto_vehiculos_django.vehiculo.forms",
-        "description": "proyecto_vehiculos_django.vehiculo.forms",
-        "peekOfCode": "MARCAS = [ ('Fiat', 'Fiat'), ('Chevrolet', 'Chevrolet'), ('Ford', 'Ford'), ('Toyota', 'Toyota'), ] \nCATEGORIAS = [ ('Particular', 'Particular'), ('Transporte', 'Transporte'), ('Carga', 'Carga'), ]\nclass VehiculoForm(forms.ModelForm):\n    marca = forms.ChoiceField(choices = MARCAS)\n    modelo = forms.CharField(max_length=100)\n    serial_carroceria = forms.CharField(max_length=50) \n    serial_motor = forms.CharField(max_length=50) \n    categoria = forms.ChoiceField(choices = CATEGORIAS) \n    precio = forms.DecimalField(max_digits=10, decimal_places=2) \n    class Meta:",
-        "detail": "proyecto_vehiculos_django.vehiculo.forms",
-        "documentation": {}
-    },
-    {
-        "label": "CATEGORIAS",
-        "kind": 5,
-        "importPath": "proyecto_vehiculos_django.vehiculo.forms",
-        "description": "proyecto_vehiculos_django.vehiculo.forms",
-        "peekOfCode": "CATEGORIAS = [ ('Particular', 'Particular'), ('Transporte', 'Transporte'), ('Carga', 'Carga'), ]\nclass VehiculoForm(forms.ModelForm):\n    marca = forms.ChoiceField(choices = MARCAS)\n    modelo = forms.CharField(max_length=100)\n    serial_carroceria = forms.CharField(max_length=50) \n    serial_motor = forms.CharField(max_length=50) \n    categoria = forms.ChoiceField(choices = CATEGORIAS) \n    precio = forms.DecimalField(max_digits=10, decimal_places=2) \n    class Meta:\n        model = Vehiculo",
+        "peekOfCode": "class VehiculoForm(forms.ModelForm):\n    class Meta:\n        model = Vehiculo\n        fields = ['marca', 'modelo', 'serial_carroceria','serial_motor','categoria', 'precio']\n        widgets = {\n            'modelo': forms.Textarea(attrs={'rows': 1}),\n            'serial_carroceria': forms.Textarea(attrs={'rows': 1}),\n            'serial_motor': forms.Textarea(attrs={'rows': 1})\n            }",
         "detail": "proyecto_vehiculos_django.vehiculo.forms",
         "documentation": {}
     },
@@ -417,7 +433,7 @@
         "kind": 6,
         "importPath": "proyecto_vehiculos_django.vehiculo.models",
         "description": "proyecto_vehiculos_django.vehiculo.models",
-        "peekOfCode": "class Vehiculo(models.Model):\n    MARCAS = [ ('Fiat', 'Fiat'), ('Chevrolet', 'Chevrolet'), ('Ford', 'Ford'), ('Toyota', 'Toyota'), ] \n    CATEGORIAS = [ ('Particular', 'Particular'), ('Transporte', 'Transporte'), ('Carga', 'Carga'), ]\n    marca = models.CharField(max_length=20, choices=MARCAS, default='Ford') \n    modelo = models.CharField(max_length=100) \n    serial_carroceria = models.CharField(max_length=50) \n    serial_motor = models.CharField(max_length=50) \n    categoria = models.CharField(max_length=20, choices=CATEGORIAS, default='Particular') \n    precio = models.DecimalField(max_digits=10, decimal_places=2) \n    fecha_creacion = models.DateTimeField(auto_now_add=True) ",
+        "peekOfCode": "class Vehiculo(models.Model):\n    MARCAS = [ ('Ford', 'Ford'), ('Fiat', 'Fiat'), ('Chevrolet', 'Chevrolet'),  ('Toyota', 'Toyota'), ] \n    CATEGORIAS = [ ('Particular', 'Particular'), ('Transporte', 'Transporte'), ('Carga', 'Carga'), ]\n    marca = models.CharField(max_length=20, choices=MARCAS, default='Ford') \n    modelo = models.CharField(max_length=100) \n    serial_carroceria = models.CharField(max_length=50) \n    serial_motor = models.CharField(max_length=50) \n    categoria = models.CharField(max_length=20, choices=CATEGORIAS, default='Particular') \n    precio = models.DecimalField(max_digits=10, decimal_places=2) \n    fecha_creacion = models.DateTimeField(auto_now_add=True) ",
         "detail": "proyecto_vehiculos_django.vehiculo.models",
         "documentation": {}
     },
@@ -426,7 +442,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.vehiculo.urls",
         "description": "proyecto_vehiculos_django.vehiculo.urls",
-        "peekOfCode": "app_name = 'vehiculo'\nurlpatterns = [\n    path('', views.index, name='index'),\n    path('add/', views.add, name='add'),\n]",
+        "peekOfCode": "app_name = 'vehiculo'\nurlpatterns = [\n    path('add/', views.add, name='add'),\n    path('listar/', views.listar, name='listar'),\n]",
         "detail": "proyecto_vehiculos_django.vehiculo.urls",
         "documentation": {}
     },
@@ -435,16 +451,16 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.vehiculo.urls",
         "description": "proyecto_vehiculos_django.vehiculo.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('add/', views.add, name='add'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('add/', views.add, name='add'),\n    path('listar/', views.listar, name='listar'),\n]",
         "detail": "proyecto_vehiculos_django.vehiculo.urls",
         "documentation": {}
     },
     {
-        "label": "index",
+        "label": "listar",
         "kind": 2,
         "importPath": "proyecto_vehiculos_django.vehiculo.views",
         "description": "proyecto_vehiculos_django.vehiculo.views",
-        "peekOfCode": "def index(request):\n    vehiculos = Vehiculo.objects.all()\n    return render(request, 'vehiculo/index.html', {'vehiculo': vehiculos})\n#@login_required()\n#@permission_required('vehiculo.view_vehiculos', raise_exception=True)\n#@permission_required('vehiculo.add_vehiculos', raise_exception=True)\ndef add(request):\n    if request.method == 'POST':\n        forms = VehiculoForm(request.POST)\n        if forms.is_valid():",
+        "peekOfCode": "def listar(request):\n    vehiculos = Vehiculo.objects.all()\n    filtro = []\n    for vehiculo in vehiculos:\n        if vehiculo.precio < 10000:\n            filtro.append('bajo')\n        elif vehiculo.precio >= 10000 and vehiculo.precio < 30000:\n            filtro.append('medio')\n        elif vehiculo.precio >= 30000:\n            filtro.append('alto')    ",
         "detail": "proyecto_vehiculos_django.vehiculo.views",
         "documentation": {}
     },
@@ -453,7 +469,7 @@
         "kind": 2,
         "importPath": "proyecto_vehiculos_django.vehiculo.views",
         "description": "proyecto_vehiculos_django.vehiculo.views",
-        "peekOfCode": "def add(request):\n    if request.method == 'POST':\n        forms = VehiculoForm(request.POST)\n        if forms.is_valid():\n            forms.save()\n            return redirect('vehiculo:index')\n    else:  # \"__latest__\"\n        forms = VehiculoForm()\n    return render(request, 'vehiculo/add.html', {'forms': forms })",
+        "peekOfCode": "def add(request):\n    if request.method == 'POST':\n        forms = VehiculoForm(request.POST)\n        if forms.is_valid():\n            forms.save()\n            return redirect('vehiculo:listar')\n    else:  # \"__latest__\"\n        forms = VehiculoForm()\n    return render(request, 'vehiculo/add.html', {'forms': forms })",
         "detail": "proyecto_vehiculos_django.vehiculo.views",
         "documentation": {}
     },

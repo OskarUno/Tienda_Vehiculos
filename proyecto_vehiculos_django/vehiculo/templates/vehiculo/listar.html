@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}Lista{% endblock %}
+{% block content %}
+<header>
+    <h1 class="listado">Listado de Vehículos</h1>
+</header>
+
+<div>
+
+    {% if error %}
+        <div class="alert alert-danger"> {{error}}</div>
+    {% endif %}
+
+    {% if filtro_listo %}
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Serial Carroceria</th>
+                <th>Serial Motor</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Condición de Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+                {% for vehiculo, categoria in filtro_listo %}
+                    <tr>
+                        <td>{{ vehiculo.marca }}</td>
+                        <td>{{ vehiculo.modelo }}</td>
+                        <td>{{ vehiculo.serial_carroceria }}</td>
+                        <td>{{ vehiculo.serial_motor }}</td>
+                        <td>{{ vehiculo.categoria }}</td>
+                        <td>{{ vehiculo.precio }}</td>
+                        <td>{{ categoria }}</td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <p>No hay ofertas disponibles actualmente...</p>    
+    {% endif %}
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

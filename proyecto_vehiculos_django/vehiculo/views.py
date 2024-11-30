@@ -3,9 +3,22 @@ from django.shortcuts import render,redirect
 from .forms import VehiculoForm
 from .models import Vehiculo
 
-def index(request):
+def listar(request):
     vehiculos = Vehiculo.objects.all()
-    return render(request, 'vehiculo/index.html', {'vehiculo': vehiculos})
+    filtro = []
+    for vehiculo in vehiculos:
+        if vehiculo.precio < 10000:
+            filtro.append('bajo')
+        elif vehiculo.precio >= 10000 and vehiculo.precio < 30000:
+            filtro.append('medio')
+        elif vehiculo.precio >= 30000:
+            filtro.append('alto')    
+        else:
+            filtro.append('error')    
+    filtro_listo = zip(vehiculos, filtro)  
+    print(filtro)  
+    return render(request, 'vehiculo/listar.html', {'filtro_listo': filtro_listo})    
+        
 
 
 #@login_required()
@@ -16,7 +29,7 @@ def add(request):
         forms = VehiculoForm(request.POST)
         if forms.is_valid():
             forms.save()
-            return redirect('vehiculo:index')
+            return redirect('vehiculo:listar')
         
     else:  # "__latest__"
         forms = VehiculoForm()

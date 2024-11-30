@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADD</title>
-</head>
-<body>
-    <H1>
-        Pagina de ADD Vehiculo
-    </H1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}Crear Oferta{% endblock %}
+{% block content %}
+    <form method="post">
+        <!-- csrf_token se utiliza para evitar ataques cruzados  -->
+        {% csrf_token %}
+        <!-- as_p Metodo para renderizar el formulario as=como p=parrafo -->
+        {{ forms.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+
+{% endblock %}

@@ -1,7 +1,7 @@
 from django.db import models
 
 class Vehiculo(models.Model):
-    MARCAS = [ ('Fiat', 'Fiat'), ('Chevrolet', 'Chevrolet'), ('Ford', 'Ford'), ('Toyota', 'Toyota'), ] 
+    MARCAS = [ ('Ford', 'Ford'), ('Fiat', 'Fiat'), ('Chevrolet', 'Chevrolet'),  ('Toyota', 'Toyota'), ] 
     CATEGORIAS = [ ('Particular', 'Particular'), ('Transporte', 'Transporte'), ('Carga', 'Carga'), ]
 
     marca = models.CharField(max_length=20, choices=MARCAS, default='Ford') 

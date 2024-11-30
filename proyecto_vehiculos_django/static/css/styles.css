@@ -1,0 +1,43 @@
+
+header .listado{
+    text-align: left;
+}
+
+.container {
+    width: 80%;
+    margin-top: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1px;
+
+}
+
+table, th, td  tr{
+    border: none;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #313133;
+}
+
+th {
+    text-align: left;
+    color: #0f0e0ef3;
+    border-bottom: 3px solid #313133;
+}
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .jumbotron p.lead{
+        font-size: 1.5rem;
+        color: blueviolet;
+    }
+}
