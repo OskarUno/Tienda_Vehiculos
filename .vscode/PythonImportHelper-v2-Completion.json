@@ -65,6 +65,30 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -105,6 +129,14 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -113,11 +145,19 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
         "documentation": {}
     },
     {
@@ -197,7 +237,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "ROOT_URLCONF = 'proyecto_vehiculos_django.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = 'proyecto_vehiculos_django.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -206,7 +246,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -296,8 +336,17 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.urls",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.index, name='index'),\n    path('vehiculo/', include('vehiculo.urls')),\n]",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.views",
+        "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.views",
+        "peekOfCode": "def index(request):\n    return render(request, 'index.html')",
+        "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.views",
         "documentation": {}
     },
     {
@@ -319,12 +368,48 @@
         "documentation": {}
     },
     {
+        "label": "VehiculoAdmin",
+        "kind": 6,
+        "importPath": "proyecto_vehiculos_django.vehiculo.admin",
+        "description": "proyecto_vehiculos_django.vehiculo.admin",
+        "peekOfCode": "class VehiculoAdmin(admin.ModelAdmin):\n    list_display = {\n        'marca',\n        'modelo',\n        'serial_carroceria',\n        'serial_motor',\n        'categoria',\n        'precio',\n        'fecha_creacion'\n        'fecha_modificacion'",
+        "detail": "proyecto_vehiculos_django.vehiculo.admin",
+        "documentation": {}
+    },
+    {
         "label": "VehículoConfig",
         "kind": 6,
         "importPath": "proyecto_vehiculos_django.vehiculo.apps",
         "description": "proyecto_vehiculos_django.vehiculo.apps",
         "peekOfCode": "class VehículoConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'vehiculo'",
         "detail": "proyecto_vehiculos_django.vehiculo.apps",
+        "documentation": {}
+    },
+    {
+        "label": "VehiculoForm",
+        "kind": 6,
+        "importPath": "proyecto_vehiculos_django.vehiculo.forms",
+        "description": "proyecto_vehiculos_django.vehiculo.forms",
+        "peekOfCode": "class VehiculoForm(forms.ModelForm):\n    marca = forms.ChoiceField(choices = MARCAS)\n    modelo = forms.CharField(max_length=100)\n    serial_carroceria = forms.CharField(max_length=50) \n    serial_motor = forms.CharField(max_length=50) \n    categoria = forms.ChoiceField(choices = CATEGORIAS) \n    precio = forms.DecimalField(max_digits=10, decimal_places=2) \n    class Meta:\n        model = Vehiculo\n        fields = ['marca', 'modelo', 'serial_carroceria','serial_motor','categoria', 'precio']",
+        "detail": "proyecto_vehiculos_django.vehiculo.forms",
+        "documentation": {}
+    },
+    {
+        "label": "MARCAS",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.vehiculo.forms",
+        "description": "proyecto_vehiculos_django.vehiculo.forms",
+        "peekOfCode": "MARCAS = [ ('Fiat', 'Fiat'), ('Chevrolet', 'Chevrolet'), ('Ford', 'Ford'), ('Toyota', 'Toyota'), ] \nCATEGORIAS = [ ('Particular', 'Particular'), ('Transporte', 'Transporte'), ('Carga', 'Carga'), ]\nclass VehiculoForm(forms.ModelForm):\n    marca = forms.ChoiceField(choices = MARCAS)\n    modelo = forms.CharField(max_length=100)\n    serial_carroceria = forms.CharField(max_length=50) \n    serial_motor = forms.CharField(max_length=50) \n    categoria = forms.ChoiceField(choices = CATEGORIAS) \n    precio = forms.DecimalField(max_digits=10, decimal_places=2) \n    class Meta:",
+        "detail": "proyecto_vehiculos_django.vehiculo.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CATEGORIAS",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.vehiculo.forms",
+        "description": "proyecto_vehiculos_django.vehiculo.forms",
+        "peekOfCode": "CATEGORIAS = [ ('Particular', 'Particular'), ('Transporte', 'Transporte'), ('Carga', 'Carga'), ]\nclass VehiculoForm(forms.ModelForm):\n    marca = forms.ChoiceField(choices = MARCAS)\n    modelo = forms.CharField(max_length=100)\n    serial_carroceria = forms.CharField(max_length=50) \n    serial_motor = forms.CharField(max_length=50) \n    categoria = forms.ChoiceField(choices = CATEGORIAS) \n    precio = forms.DecimalField(max_digits=10, decimal_places=2) \n    class Meta:\n        model = Vehiculo",
+        "detail": "proyecto_vehiculos_django.vehiculo.forms",
         "documentation": {}
     },
     {
@@ -337,11 +422,20 @@
         "documentation": {}
     },
     {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "proyecto_vehiculos_django.vehiculo.urls",
+        "description": "proyecto_vehiculos_django.vehiculo.urls",
+        "peekOfCode": "app_name = 'vehiculo'\nurlpatterns = [\n    path('', views.index, name='index'),\n    path('add/', views.add, name='add'),\n]",
+        "detail": "proyecto_vehiculos_django.vehiculo.urls",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.vehiculo.urls",
         "description": "proyecto_vehiculos_django.vehiculo.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('add/', views.add, name='add'),\n]",
         "detail": "proyecto_vehiculos_django.vehiculo.urls",
         "documentation": {}
     },
@@ -350,7 +444,16 @@
         "kind": 2,
         "importPath": "proyecto_vehiculos_django.vehiculo.views",
         "description": "proyecto_vehiculos_django.vehiculo.views",
-        "peekOfCode": "def index(request):\n    vehiculos = Vehiculo.objects.all()\n    return render(request, 'vehiculo/index.html', {'vehiculos': vehiculos})",
+        "peekOfCode": "def index(request):\n    vehiculos = Vehiculo.objects.all()\n    return render(request, 'vehiculo/index.html', {'vehiculo': vehiculos})\n#@login_required()\n#@permission_required('vehiculo.view_vehiculos', raise_exception=True)\n#@permission_required('vehiculo.add_vehiculos', raise_exception=True)\ndef add(request):\n    if request.method == 'POST':\n        forms = VehiculoForm(request.POST)\n        if forms.is_valid():",
+        "detail": "proyecto_vehiculos_django.vehiculo.views",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "proyecto_vehiculos_django.vehiculo.views",
+        "description": "proyecto_vehiculos_django.vehiculo.views",
+        "peekOfCode": "def add(request):\n    if request.method == 'POST':\n        forms = VehiculoForm(request.POST)\n        if forms.is_valid():\n            forms.save()\n            return redirect('vehiculo:index')\n    else:  # \"__latest__\"\n        forms = VehiculoForm()\n    return render(request, 'vehiculo/add.html', {'forms': forms })",
         "detail": "proyecto_vehiculos_django.vehiculo.views",
         "documentation": {}
     },
