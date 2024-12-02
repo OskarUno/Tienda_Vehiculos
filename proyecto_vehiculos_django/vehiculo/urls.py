@@ -5,5 +5,5 @@ app_name = 'vehiculo'
 
 urlpatterns = [
     path('add/', views.add, name='add'),
-    path('listar/', views.listar, name='listar'),
+    path('list/', views.listar, name='listar'),
 ]

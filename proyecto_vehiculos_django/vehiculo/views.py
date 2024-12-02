@@ -2,7 +2,10 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.shortcuts import render,redirect
 from .forms import VehiculoForm
 from .models import Vehiculo
+from django.contrib import messages
 
+@login_required
+@permission_required('vehiculo.view_vehiculo', raise_exception=True)
 def listar(request):
     vehiculos = Vehiculo.objects.all()
     filtro = []
@@ -21,9 +24,9 @@ def listar(request):
         
 
 
-#@login_required()
-#@permission_required('vehiculo.view_vehiculos', raise_exception=True)
-#@permission_required('vehiculo.add_vehiculos', raise_exception=True)
+@login_required
+@permission_required('vehiculo.view_vehiculo', raise_exception=True)
+@permission_required('vehiculo.add_vehiculo', raise_exception=True)
 def add(request):
     if request.method == 'POST':
         forms = VehiculoForm(request.POST)
@@ -33,5 +36,9 @@ def add(request):
         
     else:  # "__latest__"
         forms = VehiculoForm()
+        
     return render(request, 'vehiculo/add.html', {'forms': forms })
+
+
+
     

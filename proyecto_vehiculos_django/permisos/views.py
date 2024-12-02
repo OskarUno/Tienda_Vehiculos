@@ -1,10 +1,10 @@
 from django.shortcuts import render, redirect
 from .forms import RegistroForm
 from django.contrib.auth.models import User, Group
-from django.contrib.auth import login as auth_login
-from django.contrib.auth import logout 
+from django.contrib.auth import login as auth_login, logout
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm 
+from django.core.exceptions import ObjectDoesNotExist
 
 def registro(request):
     if request.method == 'POST':
@@ -14,14 +14,20 @@ def registro(request):
             user.set_password(form.cleaned_data['password'])
             user.save() 
             
-            #Asignar el grupo comun al nuevo usuario
-            grupo_usuario_comun = Group.objects.get(name='Usuario_comun')
-            user.groups.add(grupo_usuario_comun)
-            return redirect('permisos:login')
+        # Asignar el grupo común al nuevo usuario 
+            try: 
+                grupo_usuario_comun = Group.objects.get(name='Usuario_comun')
+                
+            except ObjectDoesNotExist: 
+                grupo_usuario_comun = Group.objects.create(name='Usuario_comun') 
+                
+            user.groups.add(grupo_usuario_comun) 
+            messages.success(request, 'Registro exitoso. Por favor, inicia sesión.') 
+            return redirect('login') 
         
     else:  # 3.8
         form = RegistroForm()
-        return render(request, 'permisos/registro.html', { 'form':form })
+    return render(request, 'permisos/registro.html', { 'form':form })
     
     
 def logout_view(request):
@@ -44,3 +50,7 @@ def login_view(request):
         form = AuthenticationForm()
         
     return render(request, 'permisos/login.html', {'form': form})
+
+
+def pagina_de_error(request): 
+    return render(request, 'permisos/pagina_de_error.html')

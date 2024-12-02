@@ -1,4 +1,13 @@
 
+.ancla{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+    margin-right: 1rem;
+    color: azure;
+}
+
 header .listado{
     text-align: left;
 }

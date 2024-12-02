@@ -128,7 +128,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Se habilita el uso del login
 #LOGIN_URL = '/accounts/login/'
-LOGIN_URL = '/usuarios/login/'
+LOGIN_URL = '/permisos/iniciar_sesion/'
+
 #Redireccion al hacer login exitoso
 LOGIN_REDIRECT_URL = '/'    #Se coloca donde se redirige al hacer login en este caso / indica al index
 
