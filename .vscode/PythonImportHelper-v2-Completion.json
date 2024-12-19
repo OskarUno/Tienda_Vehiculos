@@ -544,7 +544,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'proyecto_vehiculos_django.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'proyecto_vehiculos_django.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'ddbb_vehiculos',\n        'USER': 'postgres', # Asegúrate de usar tu usuario de PostgreSQL\n        'PASSWORD': 'admin',\n        'HOST': 'localhost',",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
@@ -553,7 +553,7 @@
         "kind": 5,
         "importPath": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "description": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'ddbb_vehiculos',\n        'USER': 'postgres', # Asegúrate de usar tu usuario de PostgreSQL\n        'PASSWORD': 'admin',\n        'HOST': 'localhost',\n        'PORT': '5432',\n    }\n}",
         "detail": "proyecto_vehiculos_django.proyecto_vehiculos_django.settings",
         "documentation": {}
     },
